@@ -4,6 +4,7 @@ import com.example.Market.Master.domain.Category;
 import com.example.Market.Master.domain.Product;
 import com.example.Market.Master.dto.ProductDTO;
 import com.example.Market.Master.service.ProductService;
+import jakarta.websocket.server.PathParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,5 +31,10 @@ public class ProductController {
     public List<Product> findAll(){
         LOG.info("::: List all categories ::: ");
         return service.findAll();
+    }
+
+    @GetMapping("/{categoryId}")
+    public List<Product> findAllByCategoryById(@PathVariable("categoryId") Integer categoryId){
+        return service.findAllByCategoryById(categoryId);
     }
 }

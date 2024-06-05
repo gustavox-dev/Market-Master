@@ -13,7 +13,6 @@
   JUnit<br>
   Mockito<br>
   RESTful<br>
-  x-api-key<br>
 
 <b>Pré-requisitos</b>
 

@@ -8,7 +8,7 @@
 <h1><b>Tecnologias</b></h1>
 
   <ul>
-    <ol>Java</ol>
+    <li>Java</li>
     <ol>Spring Boot</ol>
     <ol>OAuth</ol>
     <ol>JWT</ol>

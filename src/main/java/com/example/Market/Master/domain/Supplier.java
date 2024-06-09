@@ -24,5 +24,6 @@ public class Supplier {
 
     private String contact;
 
-    private List<String> productsSupplied;
+
+//    private List<Product> productsSupplied;
 }

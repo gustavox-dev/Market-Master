@@ -11,10 +11,10 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+//@Entity
+//@Data
+//@AllArgsConstructor
+//@NoArgsConstructor
 public class Order {
     // id, cliente, data do pedido, lista de itens do pedido, status do pedido
     @Id

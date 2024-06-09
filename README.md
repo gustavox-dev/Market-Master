@@ -5,9 +5,8 @@
   Este projeto é uma aplicação Java com Spring Boot com implementação de APIs RESTful utilizando Swagger para
   documentação e JUnit com Mockito para efetuar os testes unitários. 
 
-<h1><b>TECNOLOGIAS</b></h1>
-<hr>
-<br>
+<h1><b>Tecnologias</b></h1>
+
   Java<br>
   Spring Boot<br>
   Swagger<br>
@@ -16,13 +15,13 @@
   RESTful<br>
 
 <b>PRÉ-REQUISITOS</b>
-<hr>
+
   Java 17 ou superior <br>
   Maven<br>
   Git<br>
 
 <h1><b>Instalação</b></h1>
-<hr>
+
   1. Clone o repositório:<br>
     git clone https://github.com/gustavox-dev/Market-Master.git  <br>
   
@@ -31,8 +30,6 @@
      mvn install <br>
 
 <h1><b>Execução</b></h1>
-<hr>
-<br>
 
   1. Inicie a aplicação:<br>
      mvn spring-boot:run  <br>
@@ -42,8 +39,7 @@
 
 
 <h1><b>Autenticação</b></h1>
-<hr>
-<br>
+
 A API usa Spring Security para controle de autenticação. As seguintes funções estão disponíveis:
 
 USER -> Função de usuário padrão para usuários logados.

@@ -2,10 +2,12 @@ package com.example.Market.Master.controller;
 
 import com.example.Market.Master.domain.User;
 import com.example.Market.Master.dto.LoginRequestDTO;
+import com.example.Market.Master.dto.LoginResponseDTO;
 import com.example.Market.Master.dto.RegisterRequestDTO;
 import com.example.Market.Master.dto.ResponseLoginDTO;
 import com.example.Market.Master.enums.UserRole;
 import com.example.Market.Master.repository.UserRepository;
+import com.example.Market.Master.service.TokenService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,14 +34,18 @@ public class AuthController {
     @Autowired
     private AuthenticationManager authenticationManager;
 
+    @Autowired
+    private TokenService tokenService;
+
     @PostMapping("/login")
-    public ResponseEntity<ResponseLoginDTO> login(@RequestBody LoginRequestDTO body){
+    public ResponseEntity<LoginResponseDTO> login(@RequestBody LoginRequestDTO body){
         LOG.info("::: User {} successfully logged in ::: ", body.userName());
 
         var userNamePassword = new UsernamePasswordAuthenticationToken(body.userName(), body.password());
         var auth = this.authenticationManager.authenticate(userNamePassword);
 
-        return ResponseEntity.ok().build();
+        var token = tokenService.generateToken((User) auth.getPrincipal());
+        return ResponseEntity.ok(new LoginResponseDTO(token));
     }
 
     @PostMapping("/register")

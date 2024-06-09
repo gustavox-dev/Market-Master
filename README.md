@@ -7,12 +7,17 @@
 
 <h1><b>Tecnologias</b></h1>
 
-  Java<br>
-  Spring Boot<br>
-  Swagger<br>
-  JUnit<br>
-  Mockito<br>
-  RESTful<br>
+  <ul>
+    <ol>Java</ol>
+    <ol>Spring Boot</ol>
+    <ol>OAuth</ol>
+    <ol>JWT</ol>
+    <ol>MySQL</ol>
+    <ol>Swagger</ol>
+    <ol>JUnit</ol>
+    <ol>Mockito</ol>
+    <ol>RESTful</ol>
+  </ul>
 
 <b>PRÉ-REQUISITOS</b>
 

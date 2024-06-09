@@ -9,14 +9,14 @@
 
   <ul>
     <li>Java</li>
-    <ol>Spring Boot</ol>
-    <ol>OAuth</ol>
-    <ol>JWT</ol>
-    <ol>MySQL</ol>
-    <ol>Swagger</ol>
-    <ol>JUnit</ol>
-    <ol>Mockito</ol>
-    <ol>RESTful</ol>
+    <li>Spring Boot</li>
+    <li>OAuth</li>
+    <li>JWT</li>
+    <li>MySQL</li>
+    <li>Swagger</li>
+    <li>JUnit</li>
+    <li>Mockito</li>
+    <li>RESTful</li>
   </ul>
 
 <b>PRÉ-REQUISITOS</b>

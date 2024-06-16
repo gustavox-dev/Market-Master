@@ -31,7 +31,7 @@ public class ProductController {
         return service.findAll();
     }
 
-    @GetMapping("/{categoryId}")
+    @GetMapping("/category/{categoryId}")
     public List<Product> findAllByCategoryById(@PathVariable("categoryId") Integer categoryId){
         return service.findAllByCategoryById(categoryId);
     }
